@@ -7,5 +7,19 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
+    %div(class="wrapper")
+      %div(class="chat-side")
+        %div(class="side-heder")
+          %p(class="side-header__user-name")user-name
+          %ul(class="user-menu")
+            %li(class="user-menu__edit-user")
+            %li(class="user-meu__new-group")
+      %div(class="groups")
+
+
+
+
+
+
     = render partial: 'layouts/flash'
     = yield
